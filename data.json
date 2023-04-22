@@ -33,8 +33,9 @@
    "context":[""]
   },
   {"tag":"Gender",
-   "patterns":["I am a male","I am a female","man","woman","I am a girl",'I am a boy","girl","boy"],
-   "responses":["Great!!\n 1.If you are a female please select your body type"],
+   "patterns":["I am a female","I am a male","man","woman","I am a girl",'I am a boy","girl","boy"],
+   "responses":["Great!!\n =>If you are a female please select your body type:\n1.Houglass\n2.Pear\n3.Apple\n4.Rectangle\n5.Inverted triangle \n And if you are a male:\n1.Mesomorph\n2.Ectomorph\n3.Endomorph\n4.Triangle\n5.Rectangle",
+              "\nPlease write the no. associated with the body type(only)"],
    "context":[""]
   },
  
