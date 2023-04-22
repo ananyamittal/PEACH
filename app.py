@@ -51,3 +51,9 @@ def getResponse(ints, intents_json):
             result = random.choice(i['responses'])
             break
     return result
+    
+    
+def chatbot_response(msg):
+    ints = predict_class(msg, model)
+    res = getResponse(ints, intents)
+    return res
