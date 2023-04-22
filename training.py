@@ -13,3 +13,17 @@ import random
 words=[]
 classes=[]
 documents=[]
+ignore_words = ['?', '!']
+data_file = open('data.json').read()
+intents = json.loads(data_file)
+
+for intent in intents['intents']:
+    for pattern in intent['patterns']:
+
+        w = nltk.word_tokenize(pattern)
+        words.extend(w)
+       
+        documents.append((w, intent['tag']))
+
+        if intent['tag'] not in classes:
+            classes.append(intent['tag'])
