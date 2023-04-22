@@ -24,7 +24,7 @@
   },
   {"tag":"options",
    "patterns":["How can you help me?","What you can do?","What help you provide?","How you can be helpful?","What support is offered?"],
-   "responses":["There are many things I am capable of but for now I can: Tell you the ways of making payments,
+   "responses":["There are many things I am capable of but for now I can: Tell you the ways of making payments",
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","hi", "Hi"],
