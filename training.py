@@ -21,13 +21,10 @@ intents = json.loads(data_file)
 for intent in intents['intents']:
     for pattern in intent['patterns']:
 
-        #tokenize each word
         w = nltk.word_tokenize(pattern)
         words.extend(w)
-        #add documents in the corpus
         documents.append((w, intent['tag']))
 
-        # add to our classes list
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
             
