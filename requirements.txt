@@ -1,1 +1,7 @@
-
+flask
+tensorflow
+keras
+numpy
+random
+pickle
+json
