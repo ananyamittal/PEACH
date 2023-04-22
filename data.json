@@ -1,100 +1,5 @@
 {"intents": [
-<<<<<<< HEAD
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","hi", "Hi"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"],
-         "context": [""]
-        },
-        {"tag": "no answer",
-         "patterns": [],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
-         "context": [""]
-        },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list,Here it is Nausea and vomiting Diarrhea Constipation Headache Dizziness Drowsiness Insomnia Allergic reactions such as rash or hives Anaphylaxis Abdominal pain or discomfort Liver damage Kidney damage", "Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
-         "context": [""]
-        },
-        {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-         "responses": ["Navigating to Adverse drug reaction module","    Antidepressants (e.g., selective serotonin reuptake inhibitors (SSRIs), tricyclic antidepressants) Antipsychotics (e.g., haloperidol, risperidone Benzodiazepines (e.g., diazepam, lorazepam) Stimulants (e.g., amphetamines, methylphenidate) Opioids (e.g., oxycodone, hydrocodone) Alcohol Cocaine Cannabis Hallucinogens (e.g., LSD, psilocybin) Sedatives (e.g., zolpidem, eszopiclone)"],
-         "context": [""]
-        },
-        {"tag": "blood_pressure",
-         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-         "responses": ["Here are the general steps to measure blood pressure: Prepare: Make sure the patient is relaxed and has been sitting quietly for at least 5 minutes. Ask them to sit with their back straight and feet flat on the floor. Also, make sure the patient has not consumed any caffeine, alcohol, or tobacco for at least 30 minutes before the reading. Position the cuff: Wrap the blood pressure cuff around the upper arm with the bottom edge of the cuff about 1 inch above the bend in the elbow. Make sure the cuff is snug but not too tight. Find the pulse: Use a stethoscope to listen for the pulse in the patient's brachial artery. Place the stethoscope head just below the cuff, over the brachial artery Inflate the cuff: Inflate the cuff by squeezing the rubber bulb until the gauge reads 180-200 mmHg. This is well above the patient's expected systolic pressure. Slowly release the cuff: Release the air in the cuff slowly, at a rate of 2-3 mmHg per second. Listen for the pulse through the stethoscope while releasing the air. Record the readings: Note the point at which the pulse is first heard. This is the systolic pressure. Note the point at which the pulse disappears. This is the diastolic pressure. Record both readings. Repeat: Repeat the reading two more times, waiting at least 1 minute between readings."],
-         "context": [""]
-        },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id : rohan 120/90"]
-        },
-        {"tag": "search_blood_pressure_by_patient_id",
-         "patterns": [],
-         "responses": ["Loading Blood pressure result for Patient :150/80(normal)"],
-         "context": [""]
-        },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Here are some:    Medico Pharmacy Vitalcare Pharmacy Apex Pharmacy Healthwise Pharmacy Carewise Pharmacy Medwise Pharmacy Rxzone Pharmacy Pharmacure Medsupply Pharmacy Genihealth Pharmacy Caremed Pharmacy Wellpharm Pharmacy Cureline Pharmacy Expressmed Pharmacy Quickcare Pharmacy Prohealth Pharmacy Mediplus Pharmacy Apexcare Pharmacy Healthtop Pharmacy Elitecare Pharmacy."],
-         "context": ["search_pharmacy_by_name"]
-        },
-        {"tag": "search_pharmacy_by_name",
-         "patterns": [],
-         "responses": ["Loading pharmacy details"],
-         "context": [""]
-        },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": [" hospital with name or location:    Mayo Clinic - Rochester, Minnesota, USA Cleveland Clinic - Cleveland, Ohio, USA Massachusetts General Hospital - Boston, Massachusetts, USA Toronto General Hospital - Toronto, Ontario, Canada St. Thomas' Hospital - London, United Kingdom Max Super Speciality Hospital - New Delhi, India Asan Medical Center - Seoul, South Korea Hospital Italiano de Buenos Aires - Buenos Aires, Argentina Siriraj Hospital - Bangkok, Thailand Prince of Wales Hospital - Sydney, Australia"],
-         "context": ["search_hospital_by_params"]
-        },
-        {"tag": "search_hospital_by_params",
-         "patterns": [],
-         "responses": ["Please provide hospital type"],
-         "context": ["search_hospital_by_type"]
-        },
-        {"tag": "search_hospital_by_type",
-         "patterns": [],
-         "responses": ["Loading hospital details"],
-         "context": [""]
-        },
-  {"tag": "general_inquiries",
-         "patterns": ["what are your hospital's visiting hours?","what type of medical services do you offer?","do you have any available  doctors for consultation today?","how can i make an appoinment with one of the doctors?","what are your hospital's payment option?"],
-         "responses": ["visiting hours for the hospital are 9 to 5","we offer General Physician,ENT,Dentist,Surgeons,cancer","yes","no",
-          "you can fix an appoinment online on our website or call on the helpline no.","you can pay us in cash, credit card, debitcard"],
-         "context": [""]
-        },
- {"tag": "appoinments",
-         "patterns": [],
-         "responses": [" What kind of consultation do you need?"],
-         "context": ["search_consultation_by_time"]
-        },
-{"tag": "medical services",
-         "patterns": ["How can I request for medical records or test results?","do you have ambulance services?"],
-         "responses": ["your resuts will be available within 24hours on the website or you will recieve a whatsapp message","yes!Please call 54734785"],
-         "context": [""]
-        },
-{"tag": "Feedback",
-         "patterns": ["how can i share my feedback?"],
-         "responses": ["you can share your feedback anytime on our helpline no.,website or you can personally fill the feedback form at the reception"],
-         "context": [""]
-        }
-   ]
-}
-=======
-  {"tag": "greeting",
+{"tag": "greeting",
    "patterns": ["Hi there","How are you?","Is anyone there?","Hey","HI","Hi","Hi!","Hola","Hello","Good day","Hallo"],
    "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
    "context":[""]
@@ -128,14 +33,15 @@
    "context":[""]
   },
   {"tag":"Gender",
-   "patterns":["I am a female","I am a male","man","woman","I am a girl",'I am a boy","girl","boy"],
-   "responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
+   "patterns":["I am a female","I am a male","man","woman","I am a girl","I am a boy","girl","boy"],
+"responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
               "\nPlease write the no. or alphabet associated with the body type(only)"],
    "context":[""]
   },
-    {"tag":"body type specify",
+  {"tag":"body type specify",
    "patterns":["1","2","3","4","5","a","b","c","d","e","A","B","C","D","E"],
    "responses":["Fine!!Now can you please tell me more about the place,event or Party that you are planning to attend?\nSo,That I could provide you with the best dressing options!!"],
    "context":[""]
- 
->>>>>>> ba4de37f9714bb87895da1c66d25fe35a9866481
+}
+]
+}
