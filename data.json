@@ -17,4 +17,11 @@
                 "Happy to help you"],
    "context":[""]
   },
-  
+  {"tag":"no answer",
+   "patterns":[],
+   "responses":["Please give me more information","Sorry!Can't understand you!!","Not sure I understand"],
+   "context":[""]
+  },
+  {"tag":"options",
+   "patterns":["How can you help me?","What you can do?","What help you provide?","How you can be helpful?","What support is offered?"],
+   "responses":["There are many things I am capable of but for now I can: Tell you the ways of making payments,
