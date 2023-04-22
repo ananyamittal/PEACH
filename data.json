@@ -1,5 +1,5 @@
 {"intents": [
-{"tag": "greeting",
+  {"tag": "greeting",
    "patterns": ["Hi there","How are you?","Is anyone there?","Hey","HI","Hi","Hi!","Hola","Hello","Good day","Hallo"],
    "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
    "context":[""]
@@ -34,14 +34,38 @@
   },
   {"tag":"Gender",
    "patterns":["I am a female","I am a male","man","woman","I am a girl","I am a boy","girl","boy"],
-"responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
+   "responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
               "\nPlease write the no. or alphabet associated with the body type(only)"],
    "context":[""]
   },
-  {"tag":"body type specify",
+    {"tag":"body type specify",
    "patterns":["1","2","3","4","5","a","b","c","d","e","A","B","C","D","E"],
-   "responses":["Fine!!Now can you please tell me more about the place,event or Party that you are planning to attend?\nSo,That I could provide you with the best dressing options!!"],
+   "responses":["Fine!!Now please tell me if you want to wear:\n1.Indian\n,2.Western\n3.Casual?"],
    "context":[""]
-}
-]
-}
+    },
+   {"tag":"event",
+   "patterns":["Indian","indian","1.","1","hourglass","female"],
+   "responses":["1.Saree: A saree is a traditional Indian garment that consists of a long piece of fabric draped around the body. Choose a saree that hugs your waist and falls gracefully over your hips and curves, highlighting your figure.",
+   "\n2.Anarkali suit: Anarkali suits are a popular choice for formal events and weddings. The fitted top and flared skirt of this dress are perfect for an hourglass figure.",
+   "\n3.Lehenga choli: A lehenga choli is a two-piece outfit that consists of a long skirt and a fitted blouse. Choose a lehenga that sits high on your waist and flares out over your hips to emphasize your curves.",
+   "\n4.Salwar kameez: A salwar kameez is a comfortable and versatile outfit that consists of a tunic top, loose pants, and a dupatta (scarf). Choose a fitted tunic top that accentuates your waist and pair it with straight or slightly flared pants."],
+   "context":[""]
+  },
+  {"tag":"event",
+   "patterns":["Indian","indian","1.","1","Pear","female"],
+   "responses":["1.Anarkali suit: Anarkali suits are a popular choice for formal events and weddings. The fitted top and flared skirt of this dress can balance out wider hips and thighs.",
+   "\n2.A-line kurta: A-line kurtas are a great option for pear-shaped figures. The fitted top and flared skirt of this dress can balance out wider hips and thighs.",
+   "\n3.Lehenga choli: Choose a lehenga with a flared skirt and a blouse that fits well around the bust and waist, and pair it with a dupatta to create a balanced look.",
+   "\n4.Palazzo pants: Palazzo pants with a fitted top can balance out the wider hips and thighs, creating a streamlined look."],
+   "context":[""]
+  },
+   {"tag":"event",
+   "patterns":["Indian","indian","1.","1","Apple","female"],
+   "responses":["1.Anarkali suit: Anarkali suits are a great option for apple-shaped figures as the fitted top and flared skirt can create a balanced silhouette.",
+   "\n2.Straight-cut kurta: Straight-cut kurtas can also be a good option for apple-shaped figures. Choose a kurta that falls straight down from the bust to the hemline to create a streamlined look.",
+   "\n3.Palazzo pants: Palazzo pants with a fitted top can balance out a larger midsection and create a balanced look.",
+   "\n4.Saree: Choose a saree with a heavy border or embellishments at the bottom to draw attention away from the midsection."],
+   "context":[""]
+  },
+  
+ 
