@@ -25,8 +25,8 @@
   {"tag":"options",
    "patterns":["How can you help me?","What can you do?","What help you provide?","How you can be helpful?","What support is offered?"],
    "responses":["There are limitless things that I can do but through this chatbot I can:",
-           " 1.Provide you with great choices of different looks that you want for a particular event.",
-           " 2.Recommend the best oufits as per your bodytype,skincolour and size.",
+           "*Provide you with great choices of different looks that you want for a particular event.",
+           "*Recommend the best oufits as per your bodytype,skincolour and size.",
            " So,What are you waiting for?Ask me your styling Queries!!!!"],
    "context":[""]
   },
@@ -50,15 +50,51 @@
                 "C Endomorph",
                 "D Triangle",
                 "E Rectangle",
-              "Please write the no. or alphabet associated with the body type(only)"],
+              "Please write name associated with the body type(only)"],
    "context":[""]
   },
     {"tag":"body type specify",
-   "patterns":["1","2","3","4","5","A","B","C","D","E"],
-   "responses":["Fine!!Now please tell me what do you want to wear? ",
-                "Indian","Western","Casual"],
+   "patterns":["Hourglass","Pear","Apple","Rectangle","Inverted triangle","Mesomorph","Ectomorph","Endomorph","Triangle","Rectangle"],
+   "responses":["Fine!!Now please tell me what kind of event or party are you attending? "],
    "context":[""]
     },
+   {"tag":"body type specify",
+   "patterns":["I am attending a wedding","1"],
+   "responses":["choose clothing that accentuates her curves, such as a fitted dress or a gown with a cinched waist.",
+                "Dresses with a V-neck or sweetheart neckline can also be flattering for an hourglass figure."],
+   "context":[""]
+    },
+   {"tag":"body type specify",
+   "patterns":["I am attending a wedding","2"],
+   "responses":["you can choose dresses or gowns that emphasize your upper body, such as those with a halter or off-the-shoulder neckline.",
+                "A-line or empire waist dresses are also flattering for pear-shaped women, as they draw attention to the narrowest part of your waist and flow gracefully over your hips."],
+   "context":[""]
+    },
+   {"tag":"body type specify",
+   "patterns":["I am attending a wedding","3"],
+   "responses":["you can choose dresses or gowns that emphasize your lower body,such as those with an A-line or flared skirt.",
+                "You can also opt for dresses that create a cinched waist or have a wrap-style design.",
+                "V-neck or scoop-neck dresses can be flattering for apple-shaped women, as they draw attention to the neck and décolletage area, creating a more elongated silhouette"],
+   "context":[""]
+    },
+   {"tag":"body type specify",
+   "patterns":["I am attending a wedding","4"],
+   "responses":["To create the illusion of curves, you can choose dresses or gowns that emphasize your waistline.",
+                "Dresses with a cinched waist, such as those with a belt or sash, can create the appearance of curves.",
+                "You can also opt for dresses with a peplum or ruffle detail, which add volume and shape to the hips.",
+                "V-neck or scoop-neck dresses can be flattering for rectangle-shaped women, as they draw attention to the neck"],
+   "context":[""]
+    },
+   {"tag":"body type specify",
+   "patterns":["I am attending a wedding","5"],
+   "responses":["you can choose dresses or gowns that emphasize your lower body, such as those with an A-line or flared skirt.",
+                "You can also opt for dresses that create a cinched waist or have a wrap-style design.",
+                "Additionally, you can try to avoid clothing that adds extra volume to your upper body, such as ruffles or puffy sleeves, as they can make you appear broader.",
+                "Instead, opt for more streamlined designs and add a pop of color or statement accessory to draw the attention downward."],
+   "context":[""]
+    },
+  
+  
   
   
   
