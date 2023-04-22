@@ -1,31 +1,4 @@
 {"intents": [
-  {"tag": "greeting",
-   "patterns": ["Hi there","How are you?","Is anyone there?","Hey","HI","Hi","Hi!","Hola","Hello","Good day","Hallo"],
-   "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
-   "context":[""]
-  },
-  {"tag":"goodbye",
-   "patterns":["Bye","See you soon","Have a nice day"],
-   "responses":["Goodbye it was nice talking to you","See you later!Have a great day","Farewell!I hope to chat with you again soon",
-               "Goodbye!Don't hesitate to come back if you have anymore questions","Take care!see you next time","So long!I'll be here if you need me",
-               "Goodbye!Stay Safe and be well","Adios!Thanks for stopping by","Au revoir!Until we meet again!"],
-   "context":[""]
-  },
-  {"tag":"thanks",
-   "patterns":["Thanks","Thank You","That's Helpful","Awesome thanks","Thanks for helping me"],
-   "responses":["You're Welcome","No problem happy to help!","Glad I could assist you","My Pleasure","Anytime!","I'm here to help","Not a problem at all!",
-                "Happy to help you"],
-   "context":[""]
-  },
-  {"tag":"no answer",
-   "patterns":[],
-   "responses":["Please give me more information","Sorry!Can't understand you!!","Not sure I understand"],
-   "context":[""]
-  },
-  {"tag":"options",
-   "patterns":["How can you help me?","What you can do?","What help you provide?","How you can be helpful?","What support is offered?"],
-   "responses":["There are many things I am capable of but for now I can: Tell you the ways of making payments,
-{"intents": [
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","hi", "Hi"],
          "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
