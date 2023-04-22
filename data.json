@@ -24,7 +24,7 @@
   },
   {"tag":"options",
    "patterns":["How can you help me?","What can you do?","What help you provide?","How you can be helpful?","What support is offered?"],
-   "responses":["There are limitless things that I can do but through this chatbot I can:\n 1.Provide you with great choices of different looks that you want for a particular event.\n2.Recommend the best oufits as per your bodytype,skincolour and size./n So,What are you waiting for?Ask me your styling Queries!!!!"],
+   "responses":["There are limitless things that I can do but through this chatbot I can:\\n 1.Provide you with great choices of different looks that you want for a particular event.\\n2.Recommend the best oufits as per your bodytype,skincolour and size.\\n So,What are you waiting for?Ask me your styling Queries!!!!"],
    "context":[""]
   },
   {"tag":"Questions",
