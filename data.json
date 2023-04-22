@@ -4,4 +4,9 @@
    "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
    "context":[""]
   },
+  {"tag":"goodbye",
+   "patterns":["Bye","See you soon","Have a nice day"],
+   "Goodbye it was nice talking to you","See you later!Have a great day","Farewell!I hope to chat with you again soon",
+               "Goodbye!Don't hesitate to come back if you have anymore questions","Take care!see you next time","So long!I'll be here if you need me",
+               "Goodbye!Stay Safe and be well","Adios!Thanks for stopping by","Au revoir!Until we meet again!"],
    
