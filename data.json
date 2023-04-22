@@ -34,8 +34,12 @@
   },
   {"tag":"Gender",
    "patterns":["I am a female","I am a male","man","woman","I am a girl",'I am a boy","girl","boy"],
-   "responses":["Great!!\n =>If you are a female please select your body type:\n1.Houglass\n2.Pear\n3.Apple\n4.Rectangle\n5.Inverted triangle \n And if you are a male:\n1.Mesomorph\n2.Ectomorph\n3.Endomorph\n4.Triangle\n5.Rectangle",
-              "\nPlease write the no. associated with the body type(only)"],
+   "responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
+              "\nPlease write the no. or alphabet associated with the body type(only)"],
    "context":[""]
   },
+    {"tag":"body type specify",
+   "patterns":["1","2","3","4","5","a","b","c","d","e","A","B","C","D","E"],
+   "responses":["Fine!!Now can you please tell me more about the place,event or Party that you are planning to attend?\nSo,That I could provide you with the best dressing options!!"],
+   "context":[""]
  
