@@ -55,8 +55,8 @@
   },
     {"tag":"body type specify",
    "patterns":["1","2","3","4","5","A","B","C","D","E"],
-   "responses":["Fine!!Now please tell me if you want to wear:',
-                "Indian",2.Western\n3.Casual?"],
+   "responses":["Fine!!Now please tell me if you want to wear:",
+                "Indian","2.Western\n3.Casual?"],
    "context":[""]
     },
   
