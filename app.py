@@ -1,4 +1,4 @@
-import nltk
+import nlt
 nltk.download('popular')
 from nltk.stem import WordNetLemmatizer 
 lemmatizer = WordNetLemmatizer()
