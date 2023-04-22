@@ -1,7 +1,7 @@
 {"intents": [
   {"tag": "greeting",
-   "patterns": ["Hi there","How are you?","Is anyone there?","Hey","HI","Hi","Hi!","Hola","Hello","Good day","Hallo"],
-   "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
+   "patterns": ["Hello"],
+   "responses":["Hi there how can I help you?"],
    "context":[""]
   },
   {"tag":"goodbye",
@@ -24,7 +24,10 @@
   },
   {"tag":"options",
    "patterns":["How can you help me?","What can you do?","What help you provide?","How you can be helpful?","What support is offered?"],
-   "responses":["There are limitless things that I can do but through this chatbot I can:\\n 1.Provide you with great choices of different looks that you want for a particular event.\\n2.Recommend the best oufits as per your bodytype,skincolour and size.\\n So,What are you waiting for?Ask me your styling Queries!!!!"],
+   "responses":["There are limitless things that I can do but through this chatbot I can:",
+           " 1.Provide you with great choices of different looks that you want for a particular event.",
+           " 2.Recommend the best oufits as per your bodytype,skincolour and size.",
+           " So,What are you waiting for?Ask me your styling Queries!!!!"],
    "context":[""]
   },
   {"tag":"Questions",
@@ -34,7 +37,14 @@
   },
   {"tag":"Gender",
    "patterns":["I am a female","I am a male","man","woman","I am a girl","I am a boy","girl","boy"],
-   "responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
+   "responses":["Great!!",
+                "=>If you are a female please select your body type:",
+                "1 Houglass",
+                "2 Pear",
+                "3 Apple",
+                "4 Rectangle",
+                "5 Inverted triangle",
+                " And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
               "\nPlease write the no. or alphabet associated with the body type(only)"],
    "context":[""]
   },
