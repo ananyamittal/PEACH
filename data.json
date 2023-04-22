@@ -1,5 +1,7 @@
 {"intents": [
   {"tag": "greeting",
    "patterns": ["Hi there","How are you?","Is anyone there?","Hey","HI","Hi","Hi!","Hola","Hello","Good day","Hallo"],
-   "responses":[
+   "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
+   "context":[""]
+  },
    
