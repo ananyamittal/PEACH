@@ -1,4 +1,5 @@
 {"intents": [
+<<<<<<< HEAD
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","hi", "Hi"],
          "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
@@ -92,3 +93,49 @@
         }
    ]
 }
+=======
+  {"tag": "greeting",
+   "patterns": ["Hi there","How are you?","Is anyone there?","Hey","HI","Hi","Hi!","Hola","Hello","Good day","Hallo"],
+   "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
+   "context":[""]
+  },
+  {"tag":"goodbye",
+   "patterns":["Bye","See you soon","Have a nice day"],
+   "responses":["Goodbye it was nice talking to you","See you later!Have a great day","Farewell!I hope to chat with you again soon",
+               "Goodbye!Don't hesitate to come back if you have anymore questions","Take care!see you next time","So long!I'll be here if you need me",
+               "Goodbye!Stay Safe and be well","Adios!Thanks for stopping by","Au revoir!Until we meet again!"],
+   "context":[""]
+  },
+  {"tag":"thanks",
+   "patterns":["Thanks","Thank You","That's Helpful","Awesome thanks","Thanks for helping me"],
+   "responses":["You're Welcome","No problem happy to help!","Glad I could assist you","My Pleasure","Anytime!","I'm here to help","Not a problem at all!",
+                "Happy to help you"],
+   "context":[""]
+  },
+  {"tag":"no answer",
+   "patterns":[],
+   "responses":["Please give me more information","Sorry!Can't understand you!!","Not sure I understand"],
+   "context":[""]
+  },
+  {"tag":"options",
+   "patterns":["How can you help me?","What can you do?","What help you provide?","How you can be helpful?","What support is offered?"],
+   "responses":["There are limitless things that I can do but through this chatbot I can:\n 1.Provide you with great choices of different looks that you want for a particular event.\n2.Recommend the best oufits as per your bodytype,skincolour and size./n So,What are you waiting for?Ask me your styling Queries!!!!"],
+   "context":[""]
+  },
+  {"tag":"Questions",
+   "patterns":["I want to go","I want to visit","I have a","What should I wear","Can you suggest an outfit","can you suggest","I am going on a","What should I wear","What is the best way","How can I dress","What are some trendy options","I have a","What kind of","What is the best way","What is the best","Can you recommend","What are some","What are some good"],
+   "responses":["Please specify your gender,so that we can provide you with the best of services"],
+   "context":[""]
+  },
+  {"tag":"Gender",
+   "patterns":["I am a female","I am a male","man","woman","I am a girl",'I am a boy","girl","boy"],
+   "responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
+              "\nPlease write the no. or alphabet associated with the body type(only)"],
+   "context":[""]
+  },
+    {"tag":"body type specify",
+   "patterns":["1","2","3","4","5","a","b","c","d","e","A","B","C","D","E"],
+   "responses":["Fine!!Now can you please tell me more about the place,event or Party that you are planning to attend?\nSo,That I could provide you with the best dressing options!!"],
+   "context":[""]
+ 
+>>>>>>> ba4de37f9714bb87895da1c66d25fe35a9866481
