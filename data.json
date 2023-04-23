@@ -1,7 +1,7 @@
 {"intents": [
   {"tag": "greeting",
    "patterns": ["Hello","Hi"],
-   "responses":["Hi there how can I help you?"],
+   "responses":["Hi there how can I help you?(Please ask me How can you help me?)"],
    "context":[""]
   },
   {"tag":"goodbye",
@@ -13,8 +13,8 @@
   },
   {"tag":"thanks",
    "patterns":["Thanks","Thank You","That's Helpful","Awesome thanks","Thanks for helping me"],
-   "responses":["You're Welcome","No problem happy to help!","Glad I could assist you","My Pleasure","Anytime!","I'm here to help","Not a problem at all!",
-                "Happy to help you"],
+   "responses":["You're Welcome(Please type feedback for giving us your review)",
+                "Happy to help you(Please type feedback for giving us your review)"],
    "context":[""]
   },
   {"tag":"no answer",
@@ -24,7 +24,7 @@
   },
   {"tag":"options",
    "patterns":["How can you help me?","What can you do?","What help you provide?","How you can be helpful?","What support is offered?"],
-   "responses":["Recommend the best oufits as per your bodytype,skincolour and size.                 So,What are you waiting for?Ask me your styling Queries!!!!"],
+   "responses":["Recommend the best oufits as per your bodytype,skincolour and size.So,What are you waiting for?Ask me your styling Queries!(Please ask me I want to go,I want to visit)"],
    "context":[""]
   },
   {"tag":"Questions",
@@ -93,8 +93,8 @@
    "context":[""]
     },
   {"tag": "Feedback",
-         "patterns": ["how can i share my feedback?"],
-         "responses": ["you can share your feedback anytime on our website"],
+         "patterns": ["feedback"],
+         "responses": ["Summarize your experience in words!Our team would be happy to know your views!"],
          "context": [""]
         }
    ]
