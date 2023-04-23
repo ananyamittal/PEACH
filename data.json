@@ -91,8 +91,11 @@
    "patterns":["I am attending a wedding D"],
    "responses":["you can choose clothing that adds volume to your upper body or creates the illusion of broader shoulders. For a formal wedding, a well-tailored suit is an excellent choice for a triangle body type.Choose a suit with a structured shoulder and a single-breasted jacket to create a slimming effect on the lower body.Opt for darker colors or subtle patterns that create a vertical line, such as a navy or black pinstripe.Consider wearing a vest or waistcoat, as this can add volume to your upper body and create a more balanced look. If the wedding is more casual, you can opt for dress pants or chinos with a dress shirt or polo shirt.Choose a fitted shirt that accentuates your upper body and complements your pants. Consider wearing a blazer or sport coat, as this can add structure and volume to your upper body."],
    "context":[""]
+  },
+  {"tag":"feedback",
+   "patterns":["Good", "Worst", "Not Bad", "Very good", "Excellent"],
+   "responses":["Thankyou for your valuable feedback. Hope to see you again!"],
+   "context":[""]
   }
 ]
 }
-  
- 
