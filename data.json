@@ -1,7 +1,7 @@
 {"intents": [
   {"tag": "greeting",
-   "patterns": ["Hi there","How are you?","Is anyone there?","Hey","HI","Hi","Hi!","Hola","Hello","Good day","Hallo"],
-   "responses":["Hi there how can I help you?","Hey!Good to see you again!","Hi there,how can I help you?","Hello!How can I assist you today?"],
+   "patterns": ["Hello","Hi"],
+   "responses":["Hi there how can I help you?(Please ask me How can you help me?)"],
    "context":[""]
   },
   {"tag":"goodbye",
@@ -13,8 +13,8 @@
   },
   {"tag":"thanks",
    "patterns":["Thanks","Thank You","That's Helpful","Awesome thanks","Thanks for helping me"],
-   "responses":["You're Welcome","No problem happy to help!","Glad I could assist you","My Pleasure","Anytime!","I'm here to help","Not a problem at all!",
-                "Happy to help you"],
+   "responses":["You're Welcome(Please type feedback for giving us your review)",
+                "Happy to help you(Please type feedback for giving us your review)"],
    "context":[""]
   },
   {"tag":"no answer",
@@ -24,7 +24,7 @@
   },
   {"tag":"options",
    "patterns":["How can you help me?","What can you do?","What help you provide?","How you can be helpful?","What support is offered?"],
-   "responses":["There are limitless things that I can do but through this chatbot I can:\\n 1.Provide you with great choices of different looks that you want for a particular event.\\n2.Recommend the best oufits as per your bodytype,skincolour and size.\\n So,What are you waiting for?Ask me your styling Queries!!!!"],
+   "responses":["Recommend the best oufits as per your bodytype,skincolour and size.So,What are you waiting for?Ask me your styling Queries!(Please ask me I want to go,I want to visit)"],
    "context":[""]
   },
   {"tag":"Questions",
@@ -34,38 +34,68 @@
   },
   {"tag":"Gender",
    "patterns":["I am a female","I am a male","man","woman","I am a girl","I am a boy","girl","boy"],
-   "responses":["Great!!\n =>If you are a female please select your body type:\n1 Houglass\n2 Pear\n3 Apple\n4 Rectangle\n5 Inverted triangle \n And if you are a male:\nA Mesomorph\nB Ectomorph\nC Endomorph\nD Triangle\nE Rectangle",
-              "\nPlease write the no. or alphabet associated with the body type(only)"],
+   "responses":["If you are a female please select your body type:1 Houglass            2 Pear                3 Apple               4 Rectangle                5 Inverted triangle          And if you are a male:A Mesomorph            B Ectomorph           C Endomorph                D Triangle         E Rectangle            Please write name associated with the body type(only)"],
    "context":[""]
   },
     {"tag":"body type specify",
-   "patterns":["1","2","3","4","5","a","b","c","d","e","A","B","C","D","E"],
-   "responses":["Fine!!Now please tell me if you want to wear:\n1.Indian\n,2.Western\n3.Casual?"],
+   "patterns":["Hourglass","Pear","Apple","Rectangle","Inverted triangle","Mesomorph","Ectomorph","Endomorph","Triangle","Rectangle"],
+   "responses":["Fine!!Now please tell me what kind of event or party are you attending and also write the no. or alphabet infront of it"],
    "context":[""]
     },
-   {"tag":"event",
-   "patterns":["Indian","indian","1.","1","hourglass","female"],
-   "responses":["1.Saree: A saree is a traditional Indian garment that consists of a long piece of fabric draped around the body. Choose a saree that hugs your waist and falls gracefully over your hips and curves, highlighting your figure.",
-   "\n2.Anarkali suit: Anarkali suits are a popular choice for formal events and weddings. The fitted top and flared skirt of this dress are perfect for an hourglass figure.",
-   "\n3.Lehenga choli: A lehenga choli is a two-piece outfit that consists of a long skirt and a fitted blouse. Choose a lehenga that sits high on your waist and flares out over your hips to emphasize your curves.",
-   "\n4.Salwar kameez: A salwar kameez is a comfortable and versatile outfit that consists of a tunic top, loose pants, and a dupatta (scarf). Choose a fitted tunic top that accentuates your waist and pair it with straight or slightly flared pants."],
+   {"tag":"body type specify2",
+   "patterns":["I am attending a wedding 1"],
+   "responses":["choose clothing that accentuates her curves, such as a fitted dress or a gown with a cinched waist.Dresses with a V-neck or sweetheart neckline can also be flattering for an hourglass figure."],
    "context":[""]
-  },
-  {"tag":"event",
-   "patterns":["Indian","indian","1.","1","Pear","female"],
-   "responses":["1.Anarkali suit: Anarkali suits are a popular choice for formal events and weddings. The fitted top and flared skirt of this dress can balance out wider hips and thighs.",
-   "\n2.A-line kurta: A-line kurtas are a great option for pear-shaped figures. The fitted top and flared skirt of this dress can balance out wider hips and thighs.",
-   "\n3.Lehenga choli: Choose a lehenga with a flared skirt and a blouse that fits well around the bust and waist, and pair it with a dupatta to create a balanced look.",
-   "\n4.Palazzo pants: Palazzo pants with a fitted top can balance out the wider hips and thighs, creating a streamlined look."],
+    },
+   {"tag":"body type specify3",
+   "patterns":["I am attending a wedding 2"],
+   "responses":["you can choose dresses or gowns that emphasize your upper body, such as those with a halter or off-the-shoulder neckline.A-line or empire waist dresses are also flattering for pear-shaped women, as they draw attention to the narrowest part of your waist and flow gracefully over your hips."],
    "context":[""]
-  },
-   {"tag":"event",
-   "patterns":["Indian","indian","1.","1","Apple","female"],
-   "responses":["1.Anarkali suit: Anarkali suits are a great option for apple-shaped figures as the fitted top and flared skirt can create a balanced silhouette.",
-   "\n2.Straight-cut kurta: Straight-cut kurtas can also be a good option for apple-shaped figures. Choose a kurta that falls straight down from the bust to the hemline to create a streamlined look.",
-   "\n3.Palazzo pants: Palazzo pants with a fitted top can balance out a larger midsection and create a balanced look.",
-   "\n4.Saree: Choose a saree with a heavy border or embellishments at the bottom to draw attention away from the midsection."],
+    },
+   {"tag":"body type specify4",
+   "patterns":["I am attending a wedding 3"],
+   "responses":["you can choose dresses or gowns that emphasize your lower body,such as those with an A-line or flared skirt.You can also opt for dresses that create a cinched waist or have a wrap-style design.V-neck or scoop-neck dresses can be flattering for apple-shaped women, as they draw attention to the neck and décolletage area, creating a more elongated silhouette"],
    "context":[""]
-  },
-  
- 
+    },
+   {"tag":"body type specify5",
+   "patterns":["I am attending a wedding 4"],
+   "responses":["To create the illusion of curves, you can choose dresses or gowns that emphasize your waistline.Dresses with a cinched waist, such as those with a belt or sash, can create the appearance of curves.You can also opt for dresses with a peplum or ruffle detail, which add volume and shape to the hips.V-neck or scoop-neck dresses can be flattering for rectangle-shaped women, as they draw attention to the neck"],
+   "context":[""]
+    },
+   {"tag":"body type specify6",
+   "patterns":["I am attending a wedding 5"],
+   "responses":["you can choose dresses or gowns that emphasize your lower body, such as those with an A-line or flared skirt.You can also opt for dresses that create a cinched waist or have a wrap-style design. Additionally, you can try to avoid clothing that adds extra volume to your upper body, such as ruffles or puffy sleeves, as they can make you appear broader.Instead, opt for more streamlined designs and add a pop of color or statement accessory to draw the attention downward."],
+   "context":[""]
+    },
+    {"tag":"body type specify7",
+   "patterns":["I am attending a wedding A"],
+   "responses":["Avoid clothing that is too baggy or too tight.For a formal wedding, a well-tailored suit is an excellent choice for a mesomorph body type.A two-button or three-button jacket can help elongate your torso, while flat-front pants can create a streamlined look.Choose darker, solid colors, such as black, navy, or charcoal, and opt for a classic, tailored fit.If the wedding is more casual, you can opt for dress pants or chinos with a dress shirt or polo shirt.Choose a fitted shirt that accentuates your upper body and complements your pants.Avoid wearing a belt that adds extra bulk to your waist and choose shoes that complement your outfit, such as loafers or dress shoes."],
+   "context":[""]
+    },
+    {"tag":"body type specify8",
+   "patterns":["I am attending a wedding B"],
+   "responses":["you can choose clothing that adds volume to your upper body or creates the illusion of broader shoulders.For a formal wedding, a well-tailored suit is an excellent choice for an ectomorph body type.Choose a suit with a structured shoulder, as this can help broaden your upper body.Opt for lighter colors or patterns that add texture, such as a light gray or a subtle plaid.Avoid baggy or loose-fitting clothing that can make you appear even slimmer. If the wedding is more casual, you can opt for dress pants or chinos with a dress shirt or polo shirt.Choose a fitted shirt that accentuates your upper body and complements your pants. Avoid wearing a belt that adds extra bulk to your waist and choose shoes that complement your outfit, such as loafers or dress shoes."],
+   "context":[""]
+    },
+    {"tag":"body type specify9",
+   "patterns":["I am attending a wedding C"],
+   "responses":["To create a balanced and proportionate look, you can choose clothing that creates a streamlined and elongated appearance.For a formal wedding, a well-tailored suit is an excellent choice for an endomorph body type.Choose a suit with a structured shoulder and a single-breasted jacket to create a slimming effect. Opt for darker colors or subtle patterns that create a vertical line, such as a navy or black pinstripe. Avoid baggy or loose-fitting clothing that can add bulk to your appearance.If the wedding is more casual, you can opt for dress pants or chinos with a dress shirt or polo shirt. Choose a fitted shirt that accentuates your upper body and complements your pants.Avoid wearing a belt that adds extra bulk to your waist and choose shoes that complement your outfit, such as loafers or dress shoes."],
+   "context":[""]
+    },
+    {"tag":"body type specify10",
+   "patterns":["I am attending a wedding E"],
+   "responses":["you can choose clothing that adds volume to your upper body or creates the illusion of broader shoulders.For a formal wedding, a well-tailored suit is an excellent choice for a rectangle body type. Choose a suit with a structured shoulder and a fitted waist, as this can help create a more defined silhouette. Opt for lighter colors or patterns that add texture, such as a light gray or a subtle plaid.Avoid baggy or loose-fitting clothing that can make you appear even more rectangular.If the wedding is more casual, you can opt for dress pants or chinos with a dress shirt or polo shirt. Choose a fitted shirt that accentuates your upper body and complements your pants.Avoid wearing a belt that adds extra bulk to your waist and choose shoes that complement your outfit, such as loafers or dress shoes."],
+   "context":[""]
+    },
+    {"tag":"body type specify11",
+   "patterns":["I am attending a wedding D"],
+   "responses":["you can choose clothing that adds volume to your upper body or creates the illusion of broader shoulders. For a formal wedding, a well-tailored suit is an excellent choice for a triangle body type.Choose a suit with a structured shoulder and a single-breasted jacket to create a slimming effect on the lower body.Opt for darker colors or subtle patterns that create a vertical line, such as a navy or black pinstripe.Consider wearing a vest or waistcoat, as this can add volume to your upper body and create a more balanced look. If the wedding is more casual, you can opt for dress pants or chinos with a dress shirt or polo shirt.Choose a fitted shirt that accentuates your upper body and complements your pants. Consider wearing a blazer or sport coat, as this can add structure and volume to your upper body."],
+   "context":[""]
+    },
+  {"tag": "Feedback",
+         "patterns": ["feedback"],
+         "responses": ["Summarize your experience in words!Our team would be happy to know your views!"],
+         "context": [""]
+        }
+   ]
+}

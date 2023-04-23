@@ -12,7 +12,31 @@
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
+    <div id="preloader">
+        <div id="container" class="container-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span preloader-text=" " class="characters">C</span>
+                    
+                    <span preloader-text="P" class="characters">H</span>
+                    
+                    <span preloader-text="E" class="characters">A</span>
+                    
+                    <span preloader-text="A" class="characters">T</span>
+                    
+                    <span preloader-text="C" class="characters">B</span>
+                    
+                    <span preloader-text="H" class="characters">O</span>
+                    
+                    <span preloader-text=" " class="characters">T</span>
+                </div>
+            </div>	
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>	
+   
   <section class="msger">
     <header class="msger-header">
       <div class="msger-header-title">
@@ -31,7 +55,7 @@
           </div>
 
           <div class="msg-text">
-            Hi, welcome to PEACH !, Your Fashion Buddy...Go ahead and send me a message. 😄
+            Hi, welcome to PEACH !, Your Fashion Buddy...Go ahead and Text "Hello" to proceed further. 😄
           </div>
         </div>
       </div>
@@ -43,16 +67,22 @@
       <button type="submit" class="msger-send-btn">Send</button>
     </form>
   </section>
-  <!-- partial -->
+  
   <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
   <script>
+    $(document).ready(function() {
+        setTimeout(function() {
+          $('#container').addClass('loaded');
+          if ($('#container').hasClass('loaded')) {
+            $('#preloader').delay(9000).queue(function() {
+              $(this).remove();
+            });}
+        }, 3000);});
 
     const msgerForm = get(".msger-inputarea");
     const msgerInput = get(".msger-input");
     const msgerChat = get(".msger-chat");
 
-
-    // Icons made by Freepik from www.flaticon.com
     const BOT_IMG = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwbGiVC99YbEYk-2M_paosOxtBpRI5x06-Kg&usqp=CAU";
     const PERSON_IMG = "https://www.iconbolt.com/iconsets/ionicons-outline/person-circle.svg";
     const BOT_NAME = "    PEACH";
@@ -70,17 +100,14 @@
     });
 
     function appendMessage(name, img, side, text) {
-      //   Simple solution for small apps
       const msgHTML = `
 <div class="msg ${side}-msg">
   <div class="msg-img" style="background-image: url(${img})"></div>
-
   <div class="msg-bubble">
     <div class="msg-info">
       <div class="msg-info-name">${name}</div>
       <div class="msg-info-time">${formatDate(new Date())}</div>
     </div>
-
     <div class="msg-text">${text}</div>
   </div>
 </div>
@@ -91,8 +118,6 @@
     }
 
     function botResponse(rawText) {
-
-      // Bot Response
       $.get("/get", { msg: rawText }).done(function (data) {
         console.log(rawText);
         console.log(data);
@@ -103,7 +128,6 @@
 
     }
 
-    // Utils
     function get(selector, root = document) {
       return root.querySelector(selector);
     }
